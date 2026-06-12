@@ -1,181 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product Cards</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-body {
-  background: #f5f5f5;
-  padding: 20px;
-}
-
-.card {
-  display: flex;
-  background: white;
-  border-radius: 16px;
-  padding: 12px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  align-items: center;
-}
-
-.card img {
-  width: 90px;
-  height: 90px;
-  border-radius: 12px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.card-content {
-  flex: 1;
-  padding: 0 12px;
-}
-
-.card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin-bottom: 4px;
-}
-
-.card-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: #111;
-}
-
-.stock {
-  font-size: 11px;
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-weight: 500;
-}
-
-.in-stock {
-  background: #e8f5e9;
-  color: #2e7d32;
-}
-
-.low-stock {
-  background: #fff3e0;
-  color: #f57c00;
-}
-
-.card-desc {
-  font-size: 12px;
-  color: #777;
-  line-height: 1.4;
-  margin: 4px 0 8px 0;
-}
-
-.card-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.price {
-  font-size: 16px;
-  font-weight: 600;
-  color: #3f51b5;
-}
-
-.cart-btn {
-  width: 32px;
-  height: 32px;
-  background: #3f51b5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.cart-btn svg {
-  width: 18px;
-  height: 18px;
-  fill: white;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WANDER - Travel Philippines</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="card">
-  <img src="https://images.pexels.com/photos/3394651/pexels-photo-3394651.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Headphones">
-  <div class="card-content">
-    <div class="card-top">
-      <div class="card-title">Wireless Headphones</div>
-      <div class="stock in-stock">In Stock : 40</div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">WANDER.PH</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Packages</a>
+      <a href="#">Blog</a>
+      <a href="#">About Us</a>
+    </nav>
+    <div class="nav-right">
+      <input type="text" placeholder="Search for a place, city, destination...">
+      <button class="book-btn">Book Now</button>
     </div>
-    <div class="card-desc">Noise-cancelling over-ear headphones with 30hr battery life.</div>
-    <div class="card-bottom">
-      <div class="price">$45.00</div>
-      <div class="cart-btn">
-        <svg viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 6.55 1 6 1S5 1.45 5 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h2V4H7zm0 14H5V6h2v12zm4 0H9V6h2v12zm4 0h-2V6h2v12z"/></svg>
-      </div>
-    </div>
-  </div>
-</div>
+  </header>
 
-<div class="card">
-  <img src="https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Smart Watch">
-  <div class="card-content">
-    <div class="card-top">
-      <div class="card-title">Smart Fitness Watch</div>
-      <div class="stock in-stock">In Stock : 40</div>
-    </div>
-    <div class="card-desc">Track heart rate, sleep, and workouts with AMOLED display.</div>
-    <div class="card-bottom">
-      <div class="price">$65.00</div>
-      <div class="cart-btn">
-        <svg viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 6.55 1 6 1S5 1.45 5 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h2V4H7zm0 14H5V6h2v12zm4 0H9V6h2v12zm4 0h-2V6h2v12z"/></svg>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>WANDER</h1>
+      <p>Discover breathtaking destinations across the Philippines with curated tours, local insights, and hassle-free planning all in one platform.</p>
+      <div class="hero-btns">
+        <button class="btn-white">Plan Your Trip</button>
+        <button class="btn-outline">Explore Destinations</button>
       </div>
+      <span class="ph-tag">PH</span>
     </div>
-  </div>
-</div>
+  </section>
 
-<div class="card">
-  <img src="https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Speaker">
-  <div class="card-content">
-    <div class="card-top">
-      <div class="card-title">Bluetooth Speaker</div>
-      <div class="stock in-stock">In Stock : 40</div>
-    </div>
-    <div class="card-desc">Portable waterproof speaker with deep bass and 12hr playtime.</div>
-    <div class="card-bottom">
-      <div class="price">$70.00</div>
-      <div class="cart-btn">
-        <svg viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 6.55 1 6 1S5 1.45 5 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h2V4H7zm0 14H5V6h2v12zm4 0H9V6h2v12zm4 0h-2V6h2v12z"/></svg>
+  <!-- Why Choose Us -->
+  <section class="why-us">
+    <div class="why-left">
+      <h2>Why Thousands of Travelers Choose WANDER.ph for Their Philippine Adventures</h2>
+      <p>From pristine beaches to cultural hotspots, we make exploring the Philippines easier, safer, and more exciting with expert-crafted itineraries and round-the-clock support.</p>
+      <div class="socials">
+        <a href="#">IG</a> <a href="#">TW</a> <a href="#">FB</a>
+      </div>
+      <div class="stats">
+        <div><h3>12k</h3><p>Happy Travelers</p></div>
+        <div><h3>10yrs</h3><p>Industry Experience</p></div>
+        <div><h3>50+</h3><p>Destinations Covered</p></div>
       </div>
     </div>
-  </div>
-</div>
+    <div class="why-right">
+      <div class="card">
+        <h4>Local Expertise</h4>
+        <p>Our Filipino travel experts craft unique itineraries with insider knowledge you won't find in typical tours.</p>
+      </div>
+      <div class="card">
+        <h4>All-in-One Booking</h4>
+        <p>Book everything in one place—flights, hotels, and activities—whether for quick getaways or planned vacations.</p>
+      </div>
+      <div class="card">
+        <h4>24/7 Support</h4>
+        <p>We're here anytime, anywhere. Get real-time help from our team whenever you need it before, during, or after your trip.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-  <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Keyboard">
-  <div class="card-content">
-    <div class="card-top">
-      <div class="card-title">Mechanical Keyboard</div>
-      <div class="stock low-stock">Low Stock : 10</div>
+  <!-- Top Destinations -->
+  <section class="destinations">
+    <div class="dest-header">
+      <h2>Top Destinations</h2>
+      <p>From island escapes to cool mountain towns, discover where your next journey will take you.</p>
     </div>
-    <div class="card-desc">RGB backlit gaming keyboard with blue switches for typing.</div>
-    <div class="card-bottom">
-      <div class="price">$50.00</div>
-      <div class="cart-btn">
-        <svg viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 6.55 1 6 1S5 1.45 5 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h2V4H7zm0 14H5V6h2v12zm4 0H9V6h2v12zm4 0h-2V6h2v12z"/></svg>
+    <div class="dest-grid">
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="El Nido">
+        <span class="price">start at ₱4,999</span>
+        <h4>El Nido</h4>
+        <p>Palawan Region</p>
+        <p>⭐ 4.8 (1k)</p>
+      </div>
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" alt="Baguio">
+        <span class="price">start at ₱3,200</span>
+        <h4>Baguio City</h4>
+        <p>Benguet Region</p>
+        <p>⭐ 4.6 (950)</p>
+      </div>
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Siargao">
+        <span class="price">start at ₱5,500</span>
+        <h4>Siargao</h4>
+        <p>Surigao del Norte</p>
+        <p>⭐ 4.7 (1.5k)</p>
+      </div>
+      <div class="dest-card">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" alt="Vigan">
+        <span class="price">start at ₱4,200</span>
+        <h4>Vigan</h4>
+        <p>Ilocos Sur</p>
+        <p>⭐ 4.7 (870)</p>
       </div>
     </div>
-  </div>
-</div>
+    <button class="view-more">View more</button>
+  </section>
 
 </body>
 </html>
