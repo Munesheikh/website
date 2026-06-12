@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Cards</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  background: white;
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  align-items: center;
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-content {
+  flex: 1;
+  padding: 0 12px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 4px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+.stock {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.in-stock {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.low-stock {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.card-desc {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
+  margin: 4px 0 8px 0;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3f51b5;
+}
+
+.cart-btn {
+  width: 32px;
+  height: 32px;
+  background: #3f51b5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cart-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="https://images.pexels.com/photos/3394651/pexels-photo-3394651.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Headphones">
+  <div class="card-content">
+    <div class="card-top">
+      <div class="card-title">Wireless Headphones</div>
+      <div class="stock in-stock">In Stock : 40</div>
+    </div>
+    <div class="card-desc">Noise-cancelling over-ear headphones with 30hr battery life.</div>
+    <div class="card-bottom">
+      <div class="price">$45.00</div>
+      <div class="cart-btn">
+        <svg viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 6.55 1 6 1S5 1.45 5 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h2V4H7zm0 14H5V6h2v12zm4 0H9V6h2v12zm4 0h-2V6h2v12z"/></svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Smart Watch">
+  <div class="card-content">
+    <div class="card-top">
+      <div class="card-title">Smart Fitness Watch</div>
+      <div class="stock in-stock">In Stock : 40</div>
+    </div>
+    <div class="card-desc">Track heart rate, sleep, and workouts with AMOLED display.</div>
+    <div class="card-bottom">
+      <div class="price">$65.00</div>
+      <div class="cart-btn">
+        <svg viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 6.55 1 6 1S5 1.45 5 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h2V4H7zm0 14H5V6h2v12zm4 0H9V6h2v12zm4 0h-2V6h2v12z"/></svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Speaker">
+  <div class="card-content">
+    <div class="card-top">
+      <div class="card-title">Bluetooth Speaker</div>
+      <div class="stock in-stock">In Stock : 40</div>
+    </div>
+    <div class="card-desc">Portable waterproof speaker with deep bass and 12hr playtime.</div>
+    <div class="card-bottom">
+      <div class="price">$70.00</div>
+      <div class="cart-btn">
+        <svg viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 6.55 1 6 1S5 1.45 5 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h2V4H7zm0 14H5V6h2v12zm4 0H9V6h2v12zm4 0h-2V6h2v12z"/></svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Keyboard">
+  <div class="card-content">
+    <div class="card-top">
+      <div class="card-title">Mechanical Keyboard</div>
+      <div class="stock low-stock">Low Stock : 10</div>
+    </div>
+    <div class="card-desc">RGB backlit gaming keyboard with blue switches for typing.</div>
+    <div class="card-bottom">
+      <div class="price">$50.00</div>
+      <div class="cart-btn">
+        <svg viewBox="0 0 24 24"><path d="M7 4V2C7 1.45 6.55 1 6 1S5 1.45 5 2v2H2v2h2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h2V4H7zm0 14H5V6h2v12zm4 0H9V6h2v12zm4 0h-2V6h2v12z"/></svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
