@@ -1,0 +1,45 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background: #f9f9f9; color: #222; }
+
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 5%; background: white; position: sticky; top: 0; z-index: 10;
+}
+.logo { font-weight: bold; font-size: 18px; }
+.navbar nav a { margin: 0 12px; text-decoration: none; color: #333; font-size: 14px; }
+.nav-right input { padding: 6px 10px; border: 1px solid #ddd; border-radius: 5px; }
+.book-btn { background: #007bff; color: white; border: none; padding: 6px 14px; border-radius: 5px; cursor: pointer; }
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover;
+  height: 70vh; display: flex; align-items: center; padding: 0 5%; color: white; position: relative;
+}
+.hero-text h1 { font-size: 70px; font-weight: 800; }
+.hero-text p { max-width: 500px; margin: 15px 0; }
+.btn-white { background: white; color: #222; border: none; padding: 10px 20px; border-radius: 20px; margin-right: 10px; cursor: pointer; }
+.btn-outline { background: transparent; border: 2px solid white; color: white; padding: 10px 20px; border-radius: 20px; cursor: pointer; }
+.ph-tag { position: absolute; bottom: 20px; right: 5%; font-size: 14px; }
+
+.why-us { display: flex; padding: 60px 5%; gap: 40px; }
+.why-left { flex: 1; }
+.why-left h2 { font-size: 28px; margin-bottom: 15px; }
+.stats { display: flex; gap: 30px; margin-top: 25px; }
+.stats h3 { font-size: 24px; color: #007bff; }
+.why-right { flex: 1; display: flex; flex-direction: column; gap: 15px; }
+.card { background: #e6eefc; padding: 15px; border-radius: 12px; }
+
+.destinations { padding: 60px 5%; background: #f1f3f6; }
+.dest-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
+.dest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+.dest-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: relative; }
+.dest-card img { width: 100%; height: 180px; object-fit: cover; }
+.price { position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 4px 8px; border-radius: 6px; font-size: 12px; }
+.dest-card h4, .dest-card p { padding: 8px 12px; }
+.view-more { margin-top: 25px; background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; }
+
+@media (max-width: 768px) {
+  .why-us { flex-direction: column; }
+  .hero-text h1 { font-size: 45px; }
+  .navbar nav { display: none; }
+}
